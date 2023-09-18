@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tag from "./components/Tag";
 import TodoItem from "./components/TodoItem";
+import NewList from "./components/NewList";
 const tags = [
   { name: "work", color: "#d3cfff" },
   { name: "study", color: "#d1e5f7" },
@@ -26,7 +27,7 @@ const list = [
 function App() {
   return (
     <div className='App'>
-      <div className='header'>
+      {/* <div className='header'>
         <div className='name'>todo</div>
         <div className='plus'>+</div>
       </div>
@@ -39,7 +40,8 @@ function App() {
         {list.map((value, key) => (
           <TodoItem {...value} key={key} />
         ))}
-      </div>
+      </div> */}
+      <NewList/>
     </div>
   );
 }

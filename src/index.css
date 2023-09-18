@@ -1,6 +1,14 @@
 :root {
   font-family: "Adobe Clean", sans-serif;
 }
+input,
+textarea,
+button {
+  font-family: inherit;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 html {
   font-size: 10px;
   padding: 0.5rem;
@@ -58,24 +66,24 @@ html {
       .DropdownMenu {
         position: absolute;
         right: 0;
-        top: .5rem;
+        top: 0.5rem;
         background: white;
         min-width: 10rem;
         border-radius: 1rem;
         list-style: none;
         z-index: 1;
         padding: 0;
-        .DropdownMenuItem{
+        .DropdownMenuItem {
           padding: 1rem;
           &:not(:last-of-type) {
             border-bottom: 1px solid #eeee;
             border-radius: 1rem 1rem 0 0;
           }
-          &:last-child{
-            border-radius: 0 0 1rem 1rem ;
+          &:last-child {
+            border-radius: 0 0 1rem 1rem;
           }
-          &:hover{
-            background-color: rgba(230,230,230,.5);
+          &:hover {
+            background-color: rgba(230, 230, 230, 0.5);
           }
         }
       }
@@ -152,6 +160,40 @@ html {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
+    }
+  }
+}
+.NewListContainer {
+  margin-top: 2.5rem;
+  .TopNewList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ButtonAdd {
+      color: white;
+      border-radius: 1rem;
+      background-color: gray;
+      border: none;
+      padding: 1rem 3.5rem;
+    }
+  }
+  .FormContainer {
+    .Input {
+      margin-bottom: 3rem;
+    }
+    .InputLabel {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+    .InputText {
+      display: block;
+      border: none;
+      background-color: lightgray;
+      border-radius: 0.5rem;
+      font-size: 2rem;
+      padding: 1rem 1.5rem;
+      width: 100%;
+      margin-top: 1rem;
     }
   }
 }

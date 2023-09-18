@@ -1,5 +1,6 @@
 import React, { useId } from "react";
-import MeatballMenu from "/menu-meatball.svg";
+import MeatBallMenu from "./MeatBallMenu";
+
 interface TodoItemProps {
   title: string;
   detail: string;
@@ -11,15 +12,11 @@ function TodoItem({ title, detail, tag, isDone }: TodoItemProps) {
     <div className='TodoItem'>
       <div className='TitleContainer'>
         <div className='Title'>{title}</div>
-        <div className='Option'>
-          <img src={MeatballMenu} alt='meat-ball-menu' />
-        </div>
+        <MeatBallMenu/>
       </div>
       <div className='DetailContainer'>
         <p>
           {detail}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare iaculis ex, eget semper mauris dapibus eu.
-          Orci varius natoque.
         </p>
       </div>
       <div className='FooterContainer'>

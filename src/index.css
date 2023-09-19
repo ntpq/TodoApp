@@ -16,7 +16,7 @@ html {
 .App {
   border-radius: 15px;
   border: 1px solid black;
-  height: 100dvh;
+  height: fit-content;
   padding: 1rem;
 }
 .header {
@@ -35,8 +35,7 @@ html {
   padding: 0.25rem 1rem;
   width: fit-content;
   margin-right: 0.5rem;
-  &:hover,
-  &:active {
+  &:hover,&:active {
     background-color: #faf9f8;
   }
 }
@@ -195,5 +194,18 @@ html {
       width: 100%;
       margin-top: 1rem;
     }
+    .TagContainer{
+      display: flex;
+      flex-direction: column;
+      max-height: 15rem;
+      overflow: scroll;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem 0;
+      margin-bottom: 3rem;
+    }
+  }
+  .ButtonAdd{
+    cursor: pointer;
   }
 }

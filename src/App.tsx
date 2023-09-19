@@ -7,6 +7,10 @@ const tags = [
   { name: "study", color: "#d1e5f7" },
   { name: "entertainment", color: "#facece" },
   { name: "family", color: "#dbf2b6" },
+  { name: "work", color: "#d3cfff" },
+  { name: "study", color: "#d1e5f7" },
+  { name: "entertainment", color: "#facece" },
+  { name: "family", color: "#dbf2b6" },
 ];
 const list = [
   {
@@ -27,8 +31,8 @@ const list = [
 function App() {
   return (
     <div className='App'>
-      {/* <div className='header'>
-        <div className='name'>todo</div>
+      <div className='header'>
+        <div className='name strike'>todo</div>
         <div className='plus'>+</div>
       </div>
       <div className='TagContainer'>
@@ -40,8 +44,8 @@ function App() {
         {list.map((value, key) => (
           <TodoItem {...value} key={key} />
         ))}
-      </div> */}
-      <NewList/>
+      </div>
+      {/* <NewList/> */}
     </div>
   );
 }

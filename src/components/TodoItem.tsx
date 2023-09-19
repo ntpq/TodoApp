@@ -11,13 +11,11 @@ function TodoItem({ title, detail, tag, isDone }: TodoItemProps) {
   return (
     <div className='TodoItem'>
       <div className='TitleContainer'>
-        <div className='Title'>{title}</div>
-        <MeatBallMenu/>
+        <div className='Title Text'>{title}</div>
+        <MeatBallMenu />
       </div>
       <div className='DetailContainer'>
-        <p>
-          {detail}
-        </p>
+        <p className='Text'>{detail}</p>
       </div>
       <div className='FooterContainer'>
         <div className='TagContainer'>
